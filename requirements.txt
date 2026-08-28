@@ -1,0 +1,17 @@
+pandas
+numpy
+python-dotenv
+scikit-learn
+scipy
+matplotlib
+seaborn
+fastapi
+uvicorn
+pydantic
+mlflow
+dvc
+python-box
+ensure
+pyyaml
+joblib
+pytest
