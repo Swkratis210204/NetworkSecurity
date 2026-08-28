@@ -15,3 +15,7 @@ ensure
 pyyaml
 joblib
 pytest
+pymongo
+certifi
+
+##-e .
