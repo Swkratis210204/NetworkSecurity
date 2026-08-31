@@ -13,7 +13,7 @@ from pymongo.server_api import ServerApi
 
 
 # Load MongoDB credentials from environment variables
-load_dotenv(dotenv_path=Path("atlas-credentials.env"))
+load_dotenv()
 uri = os.getenv("MONGODB_URI")
 
 ca = certifi.where()
