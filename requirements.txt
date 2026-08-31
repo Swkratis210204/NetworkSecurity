@@ -17,5 +17,6 @@ joblib
 pytest
 pymongo
 certifi
-
+dill 
+pyaml
 ##-e .
