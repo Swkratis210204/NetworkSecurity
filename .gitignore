@@ -54,3 +54,5 @@ build/
 # ML artifacts / generated files
 # =========================
 artifacts/
+mlflow.db
+mlruns

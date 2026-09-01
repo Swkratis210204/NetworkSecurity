@@ -19,4 +19,5 @@ pymongo
 certifi
 dill 
 pyaml
+dagshub
 ##-e .
