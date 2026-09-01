@@ -31,3 +31,24 @@ def write_yaml_file(
 
     except Exception as e:
         raise NetworkSecurityException(e, sys)
+    
+    
+def save_numpy_array(filepath:str, array:np.array):
+    try:
+        dir_path=os.path.dirname(filepath)
+        os.makedirs(dir_path,exist_ok=True)
+        with open(filepath,"wb") as file_obj:
+            np.save(file_obj,array)
+    except Exception as e:
+        raise NetworkSecurityException(e,sys)
+
+
+def save_object(filepath:str, obj:object):
+    try:
+        logging.info("Entered the same_object method of MainUtils class")
+        os.makedirs(os.path.dirname(filepath),exist_ok=True)
+        with open(filepath,"wb") as file_obj:
+            pickle.dump(obj,file_obj)
+        logging.info("Exited the save_object method of MainUtils class")
+    except Exception as e:
+        raise NetworkSecurityException(e,sys) from e
