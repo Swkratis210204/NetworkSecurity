@@ -40,9 +40,6 @@ from networksecurity.utils.main_utils.utils import (
 from networksecurity.utils.ml_utils.metric.classification_metric import (
     get_classification_score,
 )
-import dagshub
-dagshub.init(repo_owner='Swkratis210204', repo_name='NetworkSecurity', mlflow=True)
-
 
 class ModelTrainer:
 
