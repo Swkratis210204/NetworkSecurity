@@ -20,4 +20,6 @@ certifi
 dill 
 pyaml
 dagshub
+fastapi
+uvicorn
 ##-e .

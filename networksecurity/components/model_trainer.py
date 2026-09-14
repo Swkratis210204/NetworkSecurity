@@ -361,7 +361,7 @@ class ModelTrainer:
             # Model Trainer Artifact
             # ========================================================
 
-            save_object("final_model.pkl",best_model)
+            save_object("final_model/model.pkl",best_model)
             
             
             model_trainer_artifact = ModelTrainerArtifact(
@@ -393,7 +393,7 @@ class ModelTrainer:
     # Initiate Model Trainer
     # ================================================================
 
-    def iniatiate_model_trainer(
+    def initiate_model_trainer(
         self,
     ) -> ModelTrainerArtifact:
 
