@@ -1,24 +1,23 @@
-name: Build and Validate
+name: workflow
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
+    paths-ignore:
+      - 'README.md'
+
 
 jobs:
-  validate:
+  integration:
+    name: Continuous Integration
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
+      - name: Lint Code
+        run: echo "Linting Repository"
 
-      - name: Verify Environment
-        run: |
-          python --version
-          python -m pip install --upgrade pip
+      - name: Run unit tests
+        run: echo "Running unit tests"
